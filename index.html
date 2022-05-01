@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="control.js"></script>
+    <title>Open Space</title>
+</head>
+<body>
+    <div class="space">
+        <div class="planet-area">
+            <img class="planet" src="./img/mars.png">
+            <img class="rocket" src="./img/rocket.png" id="rocket">
+        </div>
+        <div class="control-panel">
+            <div class="control-panel__inner">
+                <input type="password" placeholder="Enter password to unlock" id="password" name="password">
+                <input type="button" value="ok" onclick="passwordVerify()">
+                <div class="check-buttons" id="check-buttons">
+                    <input type="checkbox" name="check-button1" id="check-button1" disabled onchange="controlsCorrect()">
+                    <input type="checkbox" name="check-button2" id="check-button2" disabled onchange="controlsCorrect()">
+                    <input type="checkbox" name="check-button3" id="check-button3" disabled onchange="controlsCorrect()">
+                    <input type="checkbox" name="check-button4" id="check-button4" disabled onchange="controlsCorrect()">
+                    <input type="checkbox" name="check-button5" id="check-button5" disabled onchange="controlsCorrect()">
+                    <input type="checkbox" name="check-button6" id="check-button6" disabled onchange="controlsCorrect()">
+                </div>
+                <div class="levers">
+                    <input type="range" min="0" max="10" name="level1" id="level1" disabled onchange="controlsCorrect()">
+                    <input type="range" min="0" max="10" name="level2" id="level2" disabled onchange="controlsCorrect()">
+                    <input type="range" min="0" max="10" name="level3" id="level3" disabled onchange="controlsCorrect()">
+                    <input type="range" min="0" max="10" name="level4" id="level4" disabled onchange="controlsCorrect()">
+                    <input type="range" min="0" max="10" name="level5" id="level5" disabled onchange="controlsCorrect()">
+                </div>
+                <input type="submit" value="launch" disabled onclick="rocketLauncher()">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
